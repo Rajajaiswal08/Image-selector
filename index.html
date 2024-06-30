@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    
+    , initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         .box{
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            margin: auto;
+        }
+        img{
+            border: 1px solid black;
+        }
+        .img-box{
+          border: 1px solid black;
+          display: flex;
+          justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="images/1.jpg" alt="" width="100%" height="100%" id="mainimg">
+    </div>
+    <div class="img-box">
+    <img src="images/1.jpg" alt="" onclick="getdata(this)" width="100px" height="100px">
+    <img src="images/2.jpg" alt="" onclick="getdata(this)" width="100px" height="100px">
+    <img src="images/3.jpg" alt="" onclick="getdata(this)" width="100px" height="100px">
+    <img src="images/4.jpg" alt="" onclick="getdata(this)"  width="100px" height="100px">
+    <img src="images/5.jpg" alt="" onclick="getdata(this)"  width="100px" height="100px">
+    <img src="images/6.jpg" alt="" onclick="getdata(this)"  width="100px" height="100px">
+   </div>
+
+
+    <script>
+        var mainimg = document.getElementById("mainimg");
+
+        function getdata(code){
+            mainimg.src =code.src;
+        }
+    </script>
+</body>
+</html>
